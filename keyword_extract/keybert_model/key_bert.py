@@ -55,7 +55,12 @@ class KeyBERT(BaseKeyWordExtract):
     def infer(self, input_text):
         result_list = []
         for text_i in input_text:
-            words = jieba.lcut(text_i)
+            words_list = jieba.lcut(text_i)
+            words = []
+            for word_i in words_list:
+                if word_i not in words:
+                    words.append(word_i)
+
             # 去除停用词和无意义的标点符号
             stopwords = set(stop_load())
             candidate_keywords = [word for word in words if word not in stopwords and len(word) > 1]
