@@ -104,6 +104,4 @@ print(lda_model.infer(input_list, topic_num=3))
 
 
 ## 注意
-可以去https://hf-mirror.com/google-bert/bert-base-chinese 下载对应的权重， 然后放在keyword_extract/data/pre_model/bert_base_chinese中，就可以使用KeyBERT关键词抽取方法。
-
 
