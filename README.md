@@ -98,7 +98,7 @@ print(lda_model.infer(input_list, topic_num=3))
 * [X] 支持KeyBERT关键词抽取算法
 * [X] 支持Word2vec的关键词抽取算法
 * [X] 支持LDA的关键词抽取算法
-* [] 其他
+* [] 支持pip的安装
 
 
 
