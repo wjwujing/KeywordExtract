@@ -11,7 +11,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
 class KeyBERTConfig(object):
-    BERT_MODEL = os.path.join(PRE_MODEL, 'bert_base_chinese')
+    BERT_MODEL = os.path.join(PRE_MODEL, 'bert_tiny_chinese')
 
 
 class Word2vecConfig(object):
